@@ -9,5 +9,9 @@ internal fun ApplyKey.toPreferencesKey(): Preferences.Key<String>{
         ApplyKey.CUSTOMER_CODE -> PreferencesKey.CUSTOMER_CODE
         ApplyKey.CPF_KEY -> PreferencesKey.CPF_KEY
         ApplyKey.INVOICE_API -> PreferencesKey.INVOICE_API
+        ApplyKey.SALVAR_FATURAS -> PreferencesKey.SALVAR_FATURAS
+        ApplyKey.OBTER_FATURAS -> PreferencesKey.OBTER_FATURAS
     }
 }
+//Pega da ApplyKey e transforma em PreferenceKey
+//Ou seja, assim o dataStore lê mais fácil

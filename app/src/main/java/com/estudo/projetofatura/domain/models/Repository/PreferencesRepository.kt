@@ -1,6 +1,6 @@
-package com.estudo.projetofatura.domain.models
+package com.estudo.projetofatura.domain.models.Repository
 
-import androidx.datastore.preferences.core.Preferences
+import com.estudo.projetofatura.domain.models.ApplyKey
 import kotlinx.coroutines.flow.Flow
 
 interface PreferencesRepository {
@@ -18,4 +18,10 @@ interface PreferencesRepository {
     )
 
     suspend fun clear()
+
+    suspend fun salvar()
+
+    suspend fun obter()
+
+
 }

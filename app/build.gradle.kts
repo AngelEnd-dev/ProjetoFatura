@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
@@ -37,8 +38,6 @@ android {
 
 dependencies {
 
-
-
     implementation(platform(libs.androidx.compose.bom))
 
     implementation(libs.retrofit)
@@ -46,11 +45,13 @@ dependencies {
     implementation(libs.androidx.datastore)
     implementation(libs.gson)
     implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.serialization.json)
     implementation(libs.androidx.datastore.preferences.rxjava2)
     implementation(libs.converte.gson)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.okhttp.logging)
-
+    implementation(libs.androidx.compose.material.icons.extended)
+    implementation(libs.androidx.compose.ui.text.google.fonts)
 
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.compose.material3)

@@ -1,11 +1,14 @@
-package com.estudo.projetofatura.Data
+package com.estudo.projetofatura.Data.remote
 
 import com.google.gson.annotations.SerializedName
 
 
 //Modelo de dados - que vai ser recebido da API
 
-data class Usuario (
+data class Invoice (
+    @SerializedName("id")
+    val id: Int,
+
     @SerializedName ("customerName")
     val name : String,
 
@@ -19,7 +22,7 @@ data class Usuario (
     val email: String,
 
     @SerializedName("value")
-    val valor: Long,
+    val valor: Double,
 
     @SerializedName("documentDescription")
     val description: String,

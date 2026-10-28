@@ -16,6 +16,9 @@ kotlinxCoroutines = "1.10.1"
 gson = "2.8.9"
 navigationCompose = "2.8.8"
 okhttpLogging = "4.12.0"
+material-icons-extended = "1.7.8"
+composeGoogleFonts = "1.7.0"
+kotlinxSerialization = "1.8.0"
 
 
 [libraries]
@@ -40,12 +43,14 @@ kotlinx-coroutines-core = {group = "org.jetbrains.kotlinx", name = "kotlinx-coro
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 androidx-datastore = { group = "androidx.datastore", name = "datastore", version.ref = "datastore" }
 androidx-datastore-preferences-rxjava2 = { group = "androidx.datastore", name = "datastore-preferences-rxjava2", version.ref = "datastore" }
-okhttp = {module = "com.square.okhttp3:okhttp", version.ref = "okhttp"}
+okhttp = {module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp"}
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
 okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
-
+androidx-compose-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended" }
+androidx-compose-ui-text-google-fonts = { module = "androidx.compose.ui:ui-text-google-fonts", version.ref = "composeGoogleFonts" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }

@@ -18,8 +18,12 @@ private val Context.preferencesDataStoreConfig: DataStore<Preferences> by prefer
 
 class DataStoreManager(private val context: Context) {
 
+    //O QUE FAZ E PRA QUE FAZ?
 
-    //funções genéricas - PreferencesKey (objeto)
+    //1. gerencia pequenos dados locais (ler, grava e apaga eles)
+    //2. Serve para a persistência de dados
+
+    //São funções genéricas - PreferencesKey (objeto)
 
     //leitura
     fun readPreferenceKey(key: Preferences.Key<String>): Flow<String?> {
@@ -50,4 +54,9 @@ class DataStoreManager(private val context: Context) {
         }
     }
 
+    suspend fun removePreferenceKey(key: Preferences.Key<String>) {
+        context.preferencesDataStoreConfig.edit { preferences ->
+            preferences.remove(key)
+        }
+    }
 }

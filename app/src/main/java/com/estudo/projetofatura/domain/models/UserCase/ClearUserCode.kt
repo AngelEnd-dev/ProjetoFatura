@@ -1,6 +1,6 @@
 package com.estudo.projetofatura.domain.models.UserCase
 
-import com.estudo.projetofatura.domain.models.PreferencesRepository
+import com.estudo.projetofatura.domain.models.Repository.PreferencesRepository
 
 //CASO DE USO (3.CLEAR) DO DATA STORE
 

@@ -1,16 +1,15 @@
-package com.estudo.projetofatura.Data
-
+package com.estudo.projetofatura.Data.remote
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.create
 import java.util.concurrent.TimeUnit
 
+//Configuração do retrofit
 object RetrofitClient {
 
-    private const val BASE_URL = "http:// 192.168.124.151:3000/"
+    private const val BASE_URL = "http://192.168.124.108:3000/"
 
     private val loggingInterceptor = HttpLoggingInterceptor().apply {
         level = HttpLoggingInterceptor.Level.BODY

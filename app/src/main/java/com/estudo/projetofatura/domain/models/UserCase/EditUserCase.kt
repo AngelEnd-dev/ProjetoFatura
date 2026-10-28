@@ -1,8 +1,7 @@
 package com.estudo.projetofatura.domain.models.UserCase
 
-import androidx.datastore.preferences.core.Preferences
 import com.estudo.projetofatura.domain.models.ApplyKey
-import com.estudo.projetofatura.domain.models.PreferencesRepository
+import com.estudo.projetofatura.domain.models.Repository.PreferencesRepository
 
 //CASO DE USO (2.Edit (put)) DO DATA STORE
 class EditUserCase constructor(
